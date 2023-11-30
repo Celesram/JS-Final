@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Z Fun Factory</title>
+      <link href="styles.css" rel="stylesheet">
+      <script src="register.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,300;9..40,600&family=Lilita+One&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+    <header class="darkO">
+    <h1 class="hide">Z Fun Factory</h1>
+    <img src="images/ZFLogo.png" alt="Z Fun Factory">
+    <nav>
+        <h2 class="hide">Main Navigation</h2>
+        <ul class="nav">
+            <li><a href="#events">Events</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="darkMode"><img src="images/DarkModeBtn.png"
+                alt="A light crescent moon against a dark blue background"></button></li>
+        </ul>    
+    </nav>
+    </header>
+    <section class="banner">
+        <h2 class="hide">banner</h2>
+        <img src="images/outsideZFunFactory.png" alt="Z Fun Factory Sign">
+    </section>
+    <section id="Attractions">
+        <h2>Attractions</h2>
+        <section class="contentSwitcher">
+            <h3 class="hide">content buttons</h3>
+        <button id="contentGolfBtn">Golf</button>
+        <button id="contentgoKartBtn">Go Karts</button>
+        <button id="contentBattingBtn">Batting Cages</button>
+        <button id="contentBumperBtn">Bumper Boats</button>
+        </section>
+        <section id="golf" class="hide">
+            <h3>Mini Golf</h3>
+            <p>Golf at one of Z Fun Factory’s two 18-hole miniature golf courses.​</p>
+            <p class="cost">$7.95+tax Per Game<br>
+                $11.95+tax For Two Courses</p>
+            <img src="images/golf.png" alt="Outside Mini Golf">
+        </section>
+        <section id="goKarts" class="hide">
+            <h3>Go-Karts</h3>
+            <p>Challenge your friends and family through banked turns, reaching speeds that will have your adrenaline pumping!</p>
+            <p class="cost">$8.95+tax Single Seater<br>
+                $11.95+tax Double Seater</p>
+            <img src="images/goKart.webp" alt="kid on go kart driving on a track">
+        </section>
+        <section id="batting" class="hide">
+            <h3>Batting Cages</h3>
+            <p>Practice like a pro at one of Z Fun Factory’s five slow, medium and fast pitch batting cages. We supply helmets and bats for no extra charge. BATTER UP!</p>
+            <p class="cost">Closed For Maintenance</p>
+            <img src="images/battingCage.webp" alt="kid with baseball helmet and bat ready for a ball from the automatic pitching machine.">
+        </section>
+        <section id="bumper" class="hide">
+            <h3>Bumper Boats</h3>
+            <p>Cool off from Yuma's blazing sun with our splashtastic bumper boats!</p>
+            <p class="cost">$8.95+tax Single Seater<br>
+                $11.95+tax Double Seater</p>
+            <img src="images/bumperBoats.webp" alt="small boat in the shape of a circle in a small pond.">
+        </section>
+    </section>
+    <section class="info">
+        <h2 class="hide">info</h2>
+    <section class="about">
+        <h2>About Fun Factory</h2>
+        <p>As part of our ongoing commitment to our customers, Z Fun Factory has many activities for you and your family to enjoy. Young or old, couples or friends - our board selection of action-packed activities are catered to fit the needs of all of our guests. Visit us today and see what we have to offer. </p>
+    </section>
+    <section class="game">
+        <form id="gameForm">
+        <h2>Let's Play a Game!</h2>
+        <p>Guess a random number and see if you are a winner!</p>
+            <span id="random2"></span>
+            <div>
+                <label for="inputNumber">Guess Here!</label>
+                <input type="number" id="inputNumber" name="inputNumber" min="1" max="10">
+            </div>
+            <span id="resultMsg"></span>
+            <input type="button" value="Submit" id="gamePlay">
+        </form>
+    </section>
+    </section>
+    <section id="events">
+        <h2>Events</h2>
+        <img src="images/ToT.png" alt="Trunk or Treat">
+        <p>Oct 30th<br> @ 6:00 P.M.<br>Free Event!</p>
+    </section>
+    <section class="formS">
+        <form>
+        <h2>Contact</h2>
+        <div>
+            <label for="fullName">Full Name <span class="required">*</span><span class="guide">(minimum of one each: A-Z, a-z, 0-9, @.-_!)</span></label>
+            <input type="text" id="fullName" name="fullName">
+            <p class="hide">User name must be at least six characters and can include uppercase or lowercase letters, numbers, and @ - \ _ !</p>
+        </div>
+        <div>
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="email" >
+            <p class="hide">Please enter a valid email address</p>
+        </div>
+        <div>
+            <label for="phoneNum">Phone Number<span class="required">*</span></label>
+            <input type="number" id="phoneNum" name="phoneNum" >
+            <p class="hide">Please enter a valid phone number.</p>
+        </div>
+        <div>
+            <label for="comments">Leave  Your Messages and Comments Here!</label>
+            <input type="text" id="comments" name="comments" >
+            <p id="com" class="hide">Whoops, you forgot to leave your comment.</p>
+        </div>
+        <div id="formErrors"></div>
+        <div id="confirm"></div>
+        <div>
+            <input type="submit" id="submit" value="Register">
+        </div>
+        </form>
+    </section>
+    <footer class="darkO">
+        <p>©2021 by 4446 E County 10th St, Yuma, AZ 85365 | (928) 726-6000</p>
+    </footer>
+ </body>
+</html>

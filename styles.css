@@ -1,0 +1,533 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root{
+  --wht: #ffffff;
+  --lt-gray: #eaeaea;
+  --lt-med-gray: #555;
+  --dk-med-gray: #777;
+  --dk-gray: #222;
+  
+  --teal: #2CA697;
+  --purple: #9C6399;
+  --red: #F34730;
+  --green: #2CA64E;
+  --yellow: #FCE245;
+  --pink: #DE0B63;
+
+  --darkTeal: #13423C;
+  --darkdarkteal: #0C2C28;
+
+
+  
+  --box-shadow-sm: -3px 3px 6px var(--lt-med-gray);
+  --box-shadow-lg: -6px 6px 10px var(--lt-med-gray);
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    border-radius: 20px;
+    background: linear-gradient(0deg, #70EADB 0%, #70EADB 100%), #FFF;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--wht);
+    width: 100%;
+}
+
+
+.banner {
+   padding: 0%;
+}
+
+footer {
+    height:auto;
+    text-align:center;
+    padding:30px;
+    padding-top: 10px;
+    background-color: var(--teal);
+    color: var(--wht);
+    font-family: Lilita One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: 44px;
+}
+
+
+nav ul {
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+}
+
+nav img{
+width: 2em;
+height: auto;
+}
+
+nav a:hover, button:hover {
+  color: var(--wht);
+}
+main {
+  padding:2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+section {
+  padding:5%;
+}
+
+h1 {
+  margin:10%;
+}
+h1, h2, nav li{
+  font-size: 3em;
+  color: var(--teal);
+  font-family: 'Lilita One', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 1em;
+}
+nav li{
+  font-size:1.5em;
+  padding: 25%;
+  color: var(--teal);
+}
+
+.hide{
+  display: none;
+  visibility: hidden;
+  height: 1.5rem;
+  margin: 0.5rem 0 0 0;
+
+}
+
+.hidden{
+  display: none;
+  visibility: hidden;
+  height: 1.5rem;
+  margin: 0.5rem 0 0 0;
+
+}
+
+h2 {
+  font-size: 2em;  
+}
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+p {
+  min-height:150px;
+}
+
+img {
+  display:inline-block;
+  width:auto;
+}
+
+.banner img{
+  width: 100%;
+  height: fit-content;
+}
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+   p {
+    min-height:125px;
+  }
+
+
+header img{
+    padding: 10%;
+    padding-bottom: 0;
+}
+  main {
+    grid-template-columns: 1fr;
+  }
+  p {
+    min-height:auto;
+    font-family: 'Lilita One', sans-serif;
+    color: var(--wht);
+  }
+
+  nav {
+    position: relative;
+    display: inline-block;
+    top:25px;
+  }
+  nav ul {
+    z-index: 1;
+  }
+  nav a {
+    color: var(--teal);
+    visibility: visible;
+    display:block;
+    text-align:center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  nav li{
+    padding: 15px;
+    height: auto;
+  }
+
+/* form */
+  div label{
+    display: block;
+	  margin: 1rem 0 0 1rem;
+    font-family: 'Lilita One', sans-serif;
+    color: var(--wht);
+}
+
+.required{
+  display: inline-block;
+  color: var(--pink);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.formS {
+  background-color: var(--purple);
+  box-shadow: var(--box-shadow-lg);
+  width: 90%;
+  max-width: 375px;
+  margin: 2rem auto;
+}
+
+
+div input {
+	border: 2px solid var(--wht);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 30px 136px 20px 30px;
+	width: 50%;
+}
+
+input:focus{
+  box-shadow: var(--box-shadow-sm);
+  border: 2px solid var(--teal);
+}
+  
+
+  form h2 {
+  color: var(--wht);
+	padding: 20px 40px;
+}
+
+#submit{
+  display: block;
+  padding: 0.75rem;
+  width: 50%;
+  margin: 1rem auto;
+  background-color: var(--teal);
+  outline: none;
+  border: none;
+  color: var(--wht);
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: var(--box-shadow-lg);
+}
+
+#submit:hover{
+  box-shadow: var(--box-shadow-sm);
+}
+
+#submit:focus {
+  border: 2px solid var(--pink);
+}
+
+  
+  /* attractions */
+#Attractions {
+  background-color: var(--teal);
+  padding: 20px;
+  text-align: center; 
+}
+
+#Attractions h2{
+  color: var(--wht);
+}
+
+#Attractions section {
+  width: auto;
+}
+
+
+.cost{
+  color: var(--purple);
+}
+
+h3 {
+  font-family:  'Lilita One', sans-serif;
+  color: var(--yellow);
+}
+
+
+.contentSwitcher {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+
+.contentSwitcher button:hover{
+  box-shadow: var(--box-shadow-sm);
+}
+
+.contentSwitcher button:focus {
+  border: 2px solid var(--pink);
+}
+
+.contentSwitcher button {
+  padding: 10px; 
+  background-color: var(--purple);
+  font-family: 'Archivo Black', sans-serif;
+  color: var(--wht);
+  display: block;
+  padding: 0.75rem;
+  width: 50%;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  box-shadow: var(--box-shadow-lg);
+}
+
+/*About*/
+.about{
+  background-color: var(--green);
+  width: 45%;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  
+}
+
+.about h2{
+  color: var(--wht);
+  padding: 30px;
+}
+
+.about p{
+  padding: 20px;
+  margin: 1rem;
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about, .game {
+  width: calc(50% - 10px);
+  height: 25rem;
+  margin-bottom: 20px;
+}
+
+
+/*Game */
+.game{
+  background-color: var(--yellow);
+  width: 13rem;
+  justify-content: center;
+  display: grid;
+  padding: 2rem;
+}
+
+.game h2{
+  color: var(--teal);
+  padding: 30px;
+}
+
+.game p{
+  padding: 0px;
+  margin: 0rem;
+}
+
+.game label{
+  padding: 1rem;
+}
+
+#random2{
+ display: none;
+}
+
+#resultMsg{
+  font-family: 'Archivo Black', sans-serif;
+  color: var(--purple);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#gamePlay{
+  background-color: var(--teal);
+  color: var(--wht);
+  border: none;
+  margin: 5px;
+  padding: 1rem;
+  margin: 2rem;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+input[type="submit"], button {
+  display: block;
+  margin: 1rem auto;
+  border: none;
+  outline: none;
+  color: var(--wht);
+  padding: 0.75em;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+  #gameform{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    background-color: var(--purple);
+  }
+  #gameForm label{
+    padding: 5px;
+  }
+
+  #inputNumber{
+    width: 12rem;
+    height: 5rem;
+    font-size: 4rem;
+    padding: 5px;
+    margin-bottom: 2rem;
+  }
+/* Event */
+#events{
+  background-color: var(--red);
+  width: 50rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center; 
+}
+
+#events h2{
+  color: var(--wht);
+  padding: 30px;
+  margin: 80px 35px 35px 35px;
+  height: fit-content;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#events p {
+  font-size: 1rem;
+  width: auto;
+  padding: 30px 30px 30px 30px;
+  margin: 30px 30px 30px 30px;;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+#events img{
+  width: 36rem;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+.error{
+ color: var(--red);
+ border: 5px solid var(--red);
+}
+
+div p{
+  color: var(--red);
+  text-shadow:
+    1px 1px 0 var(--wht),
+    -1px 1px 0 var(--wht),
+    -1px -1px 0 var(--wht),
+    1px -1px 0 var(--wht);
+}
+
+@media screen and (min-width: 1300px){
+  body{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+.dark-mode{
+  background-color: var(--darkdarkteal)  !important;
+  color: var(--wht);
+}
+
+.dark-mode-html{
+  background: var(--teal) !important;
+}
+
+.darkSection{
+  color: var(--darkTeal)  !important;
+}
